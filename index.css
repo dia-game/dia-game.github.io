@@ -39,6 +39,11 @@ li[class^="layer"] {
     background-image: url("images/Bg.png");
 }
 
+.layer15 {
+    background-image: url("images/BgColorDodge.png");
+    mix-blend-mode: color-dodge;
+}
+
 .layer2 {
     background-image: url("images/Name.png");
 }
@@ -59,8 +64,14 @@ li[class^="layer"] {
     mix-blend-mode: color-dodge;
 }
 
-.layer4 {
+/* .layer4 {
     background-image: url("images/PostColorDodge.png");
     mix-blend-mode: color-dodge;
+} */
+
+.layer4 {
+    background-image: url("images/PostMain.png");
+    mix-blend-mode: color-dodge;
 }
+
 
