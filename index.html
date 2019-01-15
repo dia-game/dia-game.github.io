@@ -14,15 +14,15 @@
 </head>
 
 <body>
-<div id="scene">
-  <div data-depth="0" class="layer0"></div>
-  <div data-depth="0.2" class="layer1"></div>
-  <div data-depth="0.1" class="layer2"></div>
-  <div data-depth="0.1" class="layer25"></div>
-  <div data-depth="-0.15" class="layer3"></div>
-  <div data-depth="-0.15" class="layer35"></div>
-  <div data-depth="-0.2" class="layer4"></div>
-</div>
+<ul id="scene">
+  <li data-depth="0" class="layer0"></li>
+  <li data-depth="0.2" class="layer1"></li>
+  <li data-depth="0.1" class="layer2"></li>
+  <li data-depth="0.1" class="layer25"></li>
+  <li data-depth="-0.15" class="layer3"></li>
+  <li data-depth="-0.15" class="layer35"></li>
+  <li data-depth="-0.2" class="layer4"></li>
+</ul>
 <script type="text/javascript">
   var scene = document.getElementById('scene');
   var parallaxInstance = new Parallax(scene);
