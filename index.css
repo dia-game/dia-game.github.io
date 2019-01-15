@@ -26,6 +26,8 @@ li[class^="layer"] {
     padding: 0;
     margin: 0;
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .layer0 {
