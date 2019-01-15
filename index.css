@@ -1,67 +1,67 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #17101c;
 }
 
 * {
-    height: 100%;
+  height: 100%;
 }
 
-#scene{
-    min-height: 460px;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+#scene {
+  min-height: 460px;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 li[class^="layer"] {
-    list-style: none;
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  list-style: none;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .layer0 {
-    background-color: #17101c;
-
+  background-color: #17101c;
 }
 
 .layer1 {
-    background-image: url("images/Bg.png");
+  background-image: url("images/Bg.png");
 }
 
 .layer15 {
-    background-image: url("images/BgColorDodge.png");
-    mix-blend-mode: color-dodge;
+  background-image: url("images/BgColorDodge.png");
+  mix-blend-mode: color-dodge;
 }
 
 .layer2 {
-    background-image: url("images/Name.png");
+  background-image: url("images/Name.png");
 }
 
 .layer25 {
-    background-image: url("images/NameScreen.png");
-    opacity: 67%;
-    mix-blend-mode: screen;
+  background-image: url("images/NameScreen.png");
+  opacity: 67%;
+  mix-blend-mode: screen;
 }
 
 .layer3 {
-    background-image: url("images/DotScreen.png");
-    mix-blend-mode: screen;
+  background-image: url("images/DotScreen.png");
+  mix-blend-mode: screen;
 }
 
 .layer35 {
-    background-image: url("images/DotColorDodge.png");
-    mix-blend-mode: color-dodge;
+  background-image: url("images/DotColorDodge.png");
+  mix-blend-mode: color-dodge;
 }
 
 /* .layer4 {
@@ -70,8 +70,17 @@ li[class^="layer"] {
 } */
 
 .layer4 {
-    background-image: url("images/PostMain.png");
-    mix-blend-mode: color-dodge;
+  background-image: url("images/PostMain.png");
+  mix-blend-mode: color-dodge;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  * {
+    height: 680px;
+  }
 
+  li[class^="layer"] {
+    background-size: 200%;
+    background-position: center;
+  }
+}
