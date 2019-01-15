@@ -1,0 +1,50 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    height: 100%;
+}
+
+div[class^="layer"] {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.layer0 {
+    background-color: #17101c;
+
+}
+
+.layer1 {
+    background-image: url("images/Bg.png");
+}
+
+.layer2 {
+    background-image: url("images/Name.png");
+}
+
+.layer25 {
+    background-image: url("images/NameScreen67.png");
+    opacity: 67%;
+    mix-blend-mode: screen;
+}
+
+.layer3 {
+    background-image: url("images/NameExport.png");
+    mix-blend-mode: screen;
+}
+
+.layer35 {
+    background-image: url("images/DotColorDodge.png");
+    mix-blend-mode: color-dodge;
+}
+
+.layer4 {
+    background-image: url("images/PostColorDodge.png");
+    mix-blend-mode: color-dodge;
+}
+
