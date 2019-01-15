@@ -44,13 +44,13 @@ li[class^="layer"] {
 }
 
 .layer25 {
-    background-image: url("images/NameScreen67.png");
+    background-image: url("images/NameScreen.png");
     opacity: 67%;
     mix-blend-mode: screen;
 }
 
 .layer3 {
-    background-image: url("images/NameExport.png");
+    background-image: url("images/DotScreen.png");
     mix-blend-mode: screen;
 }
 
