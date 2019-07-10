@@ -5,7 +5,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     width: 100vw;
     height: 100%;
-    min-height: 800px;
 }
 
 body {
@@ -16,10 +15,10 @@ body {
 
 .logo{
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 10px;
-    width: 100px;
-    height: 100px;
+    width: 62px;
+    height: 62px;
     background: url("images/Logo (1).png")  center;
     background-size: contain;
     opacity: 0.3;
@@ -60,6 +59,9 @@ input[type=submit] {
     font-weight: bold;
     margin-left: -20px;
     cursor: pointer;
+    -webkit-box-shadow: 0px 3px 43px 0px rgba(61,92,128,1);
+    -moz-box-shadow: 0px 3px 43px 0px rgba(61,92,128,1);
+    box-shadow: 0px 3px 43px 0px rgba(61,92,128,1);
 }
 
 input[type=submit]::focus {
@@ -128,8 +130,7 @@ input::placeholder {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation: portrait) {
     html, body {
-        min-height: 100%;
-        height: auto;
+        min-height: 900px;
     }
     .promo-image {
         width: 80%;
@@ -139,6 +140,10 @@ input::placeholder {
         margin: 0 auto;
     }
 
+    .logo{
+        width: 124px;
+        height: 124px;
+    }
     .container {
         float: left;
         font-weight: normal;
