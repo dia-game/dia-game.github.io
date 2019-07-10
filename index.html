@@ -9,11 +9,9 @@
   <meta name="author" content="3000 Russian Hackers">
 
   <link rel="stylesheet" href="index.css?v=1.0">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       var $form = $('#mc-embedded-subscribe-form')
@@ -38,13 +36,13 @@
           alert('Could not connect to the registration server. Please try again later.')
         },
         success: function(data) {
-          $('#mc-embedded-subscribe').val('subscribe')
+          $('#mc-embedded-subscribe').val('SIGN UP FOR BETA')
           if (data.result === 'success') {
             // Yeahhhh Success
             console.log(data.msg)
             $('#mce-EMAIL').css('borderColor', '#ffffff')
             $('#subscribe-result').css('color', 'rgb(53, 114, 210)')
-            $('#subscribe-result').html('<p>Thank you for subscribing. We have sent you a confirmation email.</p>')
+            $('#subscribe-result').html('<p>Thank you for signing up. Soon we will contact you to provide more details.</p>')
             $('#mce-EMAIL').val('')
           } else {
             // Something went wrong, do something to notify the user.
@@ -73,19 +71,11 @@
 </head>
 
 <body>
-<ul id="scene" data-friction-x="0.23" data-friction-y="0.23">
-  <li data-depth="0" class="layer0"></li>
-  <li data-depth="0.2" class="layer1"></li>
-  <li data-depth="0.2" class="layer15"></li>
-  <li data-depth="0.1" class="layer2"></li>
-  <li data-depth="0.1" class="layer25"></li>
-  <li data-depth="-0.08" class="layer3"></li>
-  <li data-depth="-0.08" class="layer35"></li>
-  <li data-depth="-0.3" class="layer4"></li>
-</ul>
 
-<div class="wrapper">
-  <h1>Signup for Beta</h1>
+<div class="promo-image"></div>
+<div class="container">
+  <h1 style="font-weight: normal;">FIRST MMORPG <br> <span
+      style="font-weight: bold;">TO FIGHT DIABETES </span></h1>
 
   <div class="box">
     <form
@@ -96,21 +86,20 @@
       <div style="position: absolute; left: -5000px;" aria-hidden="true">
         <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
       </div>
-      <input type="submit" value="SIGNUP" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
-      <div id="subscribe-result">
-      </div>
+      <input type="submit" value="SIGN UP FOR BETA" name="subscribe" id="mc-embedded-subscribe" class="mc-button neon">
+      <div id="subscribe-result"></div>
     </form>
+
+    <div class="links">
+      <a href="https://www.youtube.com/watch?v=UnoFpjq-IWw" target="_blank"><span class="fa fa-youtube-play"></span>WATCH
+        TRAILER</a>
+
+      <a href="https://www.facebook.com/diagame2019/" target="_blank"><span class="fa fa-facebook-square"></span> STAY
+        TUNED</a>
+
+    </div>
   </div>
-  <h1 style="margin-top: 20px;">First MMORPG to fight diabetes</h1>
-
-  <a href="https://www.facebook.com/diagame2019/"  style="margin: 0 auto; display: block;" class="fa fa-facebook"></a>
-
 </div>
-
-<script type="text/javascript">
-  var scene = document.getElementById('scene');
-  var parallaxInstance = new Parallax(scene);
-</script>
 
 </body>
 </html>
