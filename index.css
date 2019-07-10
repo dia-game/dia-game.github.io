@@ -101,7 +101,8 @@ input::placeholder {
 }
 
 .links {
-    margin-top: 30px
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .links a {
@@ -128,9 +129,10 @@ input::placeholder {
     0 0 150px #0ff;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     html, body {
-        min-height: 900px;
+        min-height: 100vh;
+        height: auto;
     }
     .promo-image {
         width: 80%;
