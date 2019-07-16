@@ -25,6 +25,11 @@
     })
 
     function register($form) {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-726532161/E352CMHI7aUBEMGAuNoC',
+        'event_callback': function() {
+        }
+      });
       $('#mc-embedded-subscribe').val('Sending...');
       $.ajax({
         type: $form.attr('method'),
@@ -37,6 +42,7 @@
           alert('Could not connect to the registration server. Please try again later.')
         },
         success: function(data) {
+
           $('#mc-embedded-subscribe').val('SIGN UP FOR BETA')
           if (data.result === 'success') {
             // Yeahhhh Success
@@ -68,7 +74,9 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-143094084-1');
+    gtag('config', 'AW-726532161');
   </script>
+
 </head>
 
 <body>
